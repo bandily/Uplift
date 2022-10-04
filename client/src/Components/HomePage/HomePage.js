@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import '../../Styling/HomePage.css'
 
-function HomePage( {currentUser} ) {
+function HomePage({currentUser}) {
     const history = useNavigate();
 
     return (

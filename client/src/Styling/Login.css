@@ -1,0 +1,93 @@
+.authForm{
+	position: inherit;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-form {
+	background-color: rgb(46, 46, 46);
+	color: white;
+	width: 405px;
+	height: fit-content;
+	padding-bottom: 25px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 30px 30px 30px 30px;
+	height: 600px;
+	left: 50%;
+	top:  50%;
+	z-index: 1;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.please-log{
+	color:rgb(153, 153, 153);
+	position: relative;
+	top: -20px;
+}
+
+.entry{
+	width: 300px;
+	height: 38px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+
+.entry::placeholder { 
+	color: rgb(255, 255, 255);
+	opacity: .9;
+}
+
+.post-button{
+	width: 125px;
+	height: 45px;
+	margin-top: 50px;
+	font-size: 13px;
+	border-radius: 5px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+}
+
+.post-button:hover{
+	cursor: pointer;
+}
+
+.no-account{
+	background-color: transparent;
+	border: transparent;
+	color:rgb(153, 153, 153);
+	text-decoration:none;
+}
+
+.no-account:hover{
+	color: white;
+}
+
+.login-image{
+	height: 626px;
+	position: inherit;
+	bottom: 0px;
+	right: 405px;
+	z-index: 2;
+	border-radius: 30px 0px 0px 30px;
+}
+
+.error-login {
+	color: rgb(255, 102, 0);
+	position: inherit;
+	width: 100%;
+	text-align: center;
+}
+
+.open-container-details{
+	width: fit-content;
+	margin: 0 auto;
+}
