@@ -11,16 +11,18 @@ function HomePage({currentUser}) {
                 <span 
                     className="txt-rotate" 
                     data-period="2000" 
-                    data-rotate='[ "Welcome to Uplift."]'>
+                    data-rotate='[ "Uplift."]'>
                 </span>
             </h1>
-            <button 
-                onClick={() => {
-                    currentUser ? history("/profile") : history("/login")
-                }} 
-                className="button-30">
-                <span className="text">Enter</span>
-            </button>
+            <div id="button-container">
+                <button 
+                    onClick={() => {
+                        currentUser ? history("/profile") : history("/login")
+                    }} 
+                    className="button-30">
+                    <span className="text">Enter</span>
+                </button>
+            </div>
         </div>
     )
 }
