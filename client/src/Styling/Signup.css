@@ -1,0 +1,132 @@
+.signup-form{
+    background-color: rgb(46, 46, 46);
+	color: white;
+	width: 600px;
+	height: fit-content;
+	padding-bottom: 25px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 30px;
+	height: 600px;
+	left: 50%;
+	top:  50%;
+	z-index: 1;
+	position: absolute;
+	transform: translate(-50%, -50%);
+    font-family: "Assistant";
+}
+
+.authForm{
+	position: inherit;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.signup-entry{
+	width: 300px;
+	height: 38px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	padding-left: 10px;
+	margin-left:10px;
+	margin-top: 10px;
+}
+
+.signup-entry-age{
+	width: 45px;
+	height: 33px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	padding-left: 25px;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.signup-entry-weight{
+	width: 45px;
+	height: 33px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	padding-left: 22.5px;
+	margin-left: 10px;
+	margin-top: 16px;
+	font-size: 15px;
+}
+
+.signup-entry-gender{
+	background: #454857;
+	padding: 4px;
+	border-radius: 3px;
+	box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
+		0 0 0 3px rgba(185, 185, 185, 0.3);
+	position: relative;
+}
+
+.signup-entry-gender {
+	width: 60px;
+	height: 100%;
+	margin: 0px 12.5px;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 4px 8px;
+
+	background: #454857;
+	color: #bdbdbdbd;
+	font-size: 14px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	transition: all 100ms linear;
+}
+
+.signup-entry-gender:checked {
+	color: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.signup-entry-gender:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.signup-entry-gender:checked{
+	color:rgb(255, 255, 255);
+}
+
+.no-account:hover{
+	color: white;
+}
+
+.no-account{
+	background-color: transparent;
+	border: transparent;
+	color:rgb(153, 153, 153);
+	text-decoration:none;
+	font-size: 15px;
+}
+
+.error-signup {
+	color: rgb(255, 102, 0);
+	position: inherit;
+	width: fit-content;
+	text-align: left;
+}
+
+.error-signup p {
+	position: relative;
+	margin-bottom: -15px;
+	left: 185px;
+}
