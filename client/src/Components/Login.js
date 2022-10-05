@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import login from '../Images/login.jpg'
 import '../Styling/Login.css'
-import {AiOutlineUser} from 'react-icons/ai';
 
 function Login ({setCurrentUser}) {
     const [username, setUsername] = useState('');
