@@ -77,7 +77,7 @@ function Signup({ setCurrentUser }) {
         >
           SIGN UP
         </h1>
-        <p className="please-log">Please enter your username and password</p>
+        <p className="please-log">Please enter your username and password.</p>
 
         <p>
           <label htmlFor="username" style={{ marginRight: "5px" }}>
