@@ -5,9 +5,9 @@ import Login from "./Components/Login";
 import "./Styling/App.css";
 import Signup from "./Components/Signup";
 import ProfilePage from "./Components/Profile/ProfilePage";
-import NavBar from "./Components/NavBar";
-import WithNav from "./Components/WithNav";
-import WithoutNav from "./Components/WithoutNav";
+import NavBar from "./Components/NavBars/NavBar";
+import HomeNav from "./Components/NavBars/HomeNav";
+import ProfileNav from "./Components/NavBars/ProfileNav";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -33,12 +33,14 @@ function App() {
         <Fragment>
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser} />
           <Routes>
-            <Route element={<WithNav />}>
+            <Route element={<HomeNav />}>
               <Route exact path="/login" element={<Login setCurrentUser={setCurrentUser}/>}/>
               <Route exact path="/signup" element={<Signup setCurrentUser={setCurrentUser}/>}/>
               <Route exact path="/" element={<HomePage currentUser={currentUser}/>}/>
+              {/* <Route exact path="/profile" element={<ProfilePage setCurrentUser={setCurrentUser}/>}/> */}
+
             </Route>
-            <Route element={<WithoutNav />}>
+            <Route element={<ProfileNav />}>
               <Route exact path="/profile" element={<ProfilePage setCurrentUser={setCurrentUser}/>}/>
             </Route>
           </Routes>
