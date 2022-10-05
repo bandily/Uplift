@@ -78,7 +78,7 @@ function NavBar({setCurrentUser, currentUser}) {
                         to="/signup"
                         exact
                         style={linkStyles}
-                        > Signup
+                        > Sign up
                     </NavLink>
                 </div>) :null}
         </div>
