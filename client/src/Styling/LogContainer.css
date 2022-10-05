@@ -1,0 +1,175 @@
+.log-controller{
+    background-color: rgb(44, 44, 44);
+    box-shadow: 10px 5px 5px rgb(39, 39, 39);
+    width: 50%;
+    padding: 0.3px 15px 30px 15px;
+    position: relative;
+    margin: -415px 22% 0 auto;
+    border-radius: 20px;
+    max-width: 1000px;
+    max-height: 480px;
+    font-family: "Assistant";
+}
+.logs-container-div{
+    min-height: 360px;
+}
+
+.log-controller>h2{
+    position: relative;
+    color: white;
+    margin-bottom: 5px;
+    left: 5%;
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.select-filter{
+    position: relative;
+    top: -35px;
+    width: fit-content;
+    left: 86%;
+    font-size: 15px;
+}
+
+.next-page-logs{
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    position: inherit;
+
+}
+
+.next-page-logs button{
+    margin: 0 3px;
+    cursor: pointer;
+    color:white;
+    left: 125px;
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    box-shadow: 10px 5px 5px rgb(39, 39, 39);
+    padding: 1px 15px;
+    border-radius: 20px;
+
+}
+
+.left-page-div{
+    margin-right: 50px;
+}
+
+.right-page-div{
+    margin-left: 50px;
+}
+
+.page-number{
+    color: white;
+    position: relative;
+    top: -15px;
+    min-width: 10px;
+}
+
+.activity-details{
+    position:absolute;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 10px 5px 5px rgb(39, 39, 39, 0.5);
+    top: -365px;
+    left: 240px;
+    height: 345px;
+    width: 345px;
+    border-radius: 14px;
+}
+
+.display-details-active{
+    color:white;
+}
+
+.display-details-active h1{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 35px;
+    font-weight:bolder;
+    font-family: "Assistant";
+}
+
+.date-details{
+    width: fit-content;
+    font-size: 13px;
+    margin: 0 auto;
+    padding-top: 3px;
+    color: grey;
+}
+
+.happiness-details{
+    position: relative;
+    top: 88px;
+    left: 50px;
+    text-align: center;
+    width: fit-content;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+
+.weight-details{
+    position: relative;
+    top: 20px;
+    left: 225px;
+    text-align: center;
+    width: fit-content;
+    font-size: 17px;
+    letter-spacing: .5px;
+}
+.weightDetails{
+    font-size: 20px;
+}
+
+.notes-details{
+    position: relative;
+    top: 36px;
+    left: 17px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 10px 6px 6px 6px;
+    max-width: 300px;
+    height: 57px;
+    border-radius: 14px;
+}
+
+.no-activity-selected{
+    color: grey;
+    font-size: 20px;
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    top: 150px;
+}
+
+.no-activity-loading{
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    left: 67px;
+    width: fit-content;
+    height: 130px;
+}
+
+.goal-weight{
+    color: white;
+    position: absolute;
+    left: 245px;
+    top: 87px;
+    font-size: 33px;
+}
+
+.weight-arrows{
+    width: 50px;
+    position: absolute;
+    left: 180px;
+    top: 118px;
+}
+
+.happiness-level{
+    font-size: 60px;
+    position: absolute;
+    left: 48px;
+    top: 40px;
+}

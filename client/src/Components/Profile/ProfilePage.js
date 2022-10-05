@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import '../../Styling/ProfilePage.css'
+import LogsContainer from "./LogContainer";
 
 function ProfilePage({ currentUser }) {
   const history = useNavigate();
@@ -38,8 +39,7 @@ function ProfilePage({ currentUser }) {
             )}
           </button>
           <h1 className="profile-username">{currentUser.username}</h1>
-        </>
-      )}
+          <LogsContainer currentUser={currentUser} logs={currentUser.logs}/></>)}
     </div>
   );
 }

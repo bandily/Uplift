@@ -1,0 +1,143 @@
+.signup-entry-happy1,
+.signup-entry-happy2,
+.signup-entry-happy3,
+.signup-entry-happy4,
+.signup-entry-happy5{
+	background: #454857;
+	padding: 4px;
+	border-radius: 3px;
+	box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
+		0 0 0 3px rgba(185, 185, 185, 0.3);
+	position: relative;
+}
+
+.signup-entry-happy1,
+.signup-entry-happy2,
+.signup-entry-happy3,
+.signup-entry-happy4,
+.signup-entry-happy5 {
+	width: 30px;
+	height: 100%;
+	margin: 0px 12.5px;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 4px 5px;
+	background: #454857;
+	color: #bdbdbdbd;
+	font-size: 15px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	transition: all 100ms linear;
+}
+
+.signup-entry-happy5:checked {
+	color: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #4938407a;
+  background-color: rgba(9, 255, 0, 0.884);
+  color:rgb(255, 255, 255);
+}
+.signup-entry-happy4:checked {
+	color: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #4938407a;
+  background-color: rgba(157, 255, 0, 0.884);
+  color:rgb(255, 255, 255);
+}
+.signup-entry-happy3:checked {
+	color: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #4938407a;
+  background-color: rgba(255, 255, 0, 0.884);
+  color:rgb(255, 255, 255);
+}
+.signup-entry-happy2:checked {
+	color: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #4938407a;
+  background-color: rgba(255, 123, 0, 0.884);
+  color:rgb(255, 255, 255);
+}
+.signup-entry-happy1:checked {
+	color: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #4938407a;
+  background-color: rgba(255, 51, 0, 0.884);
+  color:rgb(255, 255, 255);
+}
+
+.signup-entry-happy1:before,
+.signup-entry-happy2:before,
+.signup-entry-happy3:before,
+.signup-entry-happy4:before,
+.signup-entry-happy5:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.calendar{
+  position: fixed;
+  margin-top: -140px;
+  width: 35%;
+  margin-left: 325px;
+  z-index: 2;
+  background-color: rgb(46, 46, 46);
+  text-decoration: none;
+  padding: 1px;
+}
+
+.react-calendar__month-view__weekdays{
+  font-size: 15px;
+}
+
+.exit-calendar{
+  position: relative;
+  top: -178px;
+  left: 400px;
+  width: fit-content;
+  color: transparent;
+  margin-bottom: -68px;
+}
+
+.calendar-show{
+  position: static;
+  margin-top: -108px;
+  margin-bottom: 90px;
+  margin-left: 330px;
+  width: fit-content;
+}
+
+.date{
+  position: relative;
+  top: -60px;
+  left: 140px;
+  width: fit-content;
+}
+
+.signup-entry-date{
+	height: 33px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	padding-left: 25px;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+  width: 110px;
+}
+
+.error{
+	width: fit-content;
+	text-align: left;
+	margin: 0 auto 0 10px;
+}
+
+.error-message{
+	margin: -5px 0;
+}

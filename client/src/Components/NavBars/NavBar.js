@@ -35,7 +35,7 @@ function NavBar({setCurrentUser, currentUser}) {
     return (
         <div id="navbar">
             <NavLink to="/" exact>
-                <a href="/" style={{height: "55px", fontFamily: "Assistant", color:"white", fontSize:"30px", textDecoration: "none",}}>Uplift.</a>
+                <a href="/" style={{height: "55px", fontFamily: "Assistant", color:"white", fontSize:"30px", textDecoration: "none",}} onClick={() => handleClick}>Uplift.</a>
             </NavLink>
 
             {currentUser ? (
@@ -80,7 +80,7 @@ function NavBar({setCurrentUser, currentUser}) {
                         style={linkStyles}
                         > Sign up
                     </NavLink>
-                </div>) :null}
+                </div>) : null}
         </div>
     )
 }
