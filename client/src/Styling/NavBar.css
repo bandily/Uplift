@@ -1,0 +1,51 @@
+#navbar{
+    display: flex;
+    flex-direction: row;
+    width: 98.5%;
+    float: left;
+    padding: 15px 15px 15px 15px;
+    position: fixed;
+    z-index: 2;
+    margin-top: -5px;
+    background-color: rgb(50, 50, 50);
+    font-family: "Assistant";
+    text-decoration: none;
+}
+
+.buttons{
+    margin-left: auto;
+}
+
+.logged{
+    color: transparent;
+    height: 50px;
+    margin-top: 7px;
+}
+
+.logged:hover{
+    color: white;
+}
+
+.logged-in-nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 98.5%;
+    padding: 10px 15px 5px 5px;
+    z-index: 2;
+    margin-top: -10px;
+    position:absolute;
+    float:right;
+    right: 0;
+    width: auto;
+}
+
+.nav-icon{
+    position: relative;
+    margin: 0px 5px;
+    width: 45px;
+}
+
+.login-button:hover{
+    margin-top: 1px;
+}

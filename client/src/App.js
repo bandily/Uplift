@@ -4,6 +4,8 @@ import HomePage from './Components/HomePage/HomePage';
 import Login from './Components/Login';
 import './Styling/App.css'
 import Signup from './Components/Signup'
+import ProfilePage from './Components/Profile/ProfilePage'
+import NavBar from './Components/NavBar';
 
 function App() {
 
@@ -29,9 +31,10 @@ function App() {
     <div className='bg bg3'></div>
       <Router>
         <Fragment>
-          {/* <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}/> */}
+          <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser}/>
           <Routes>
           <Route exact path="/signup" element={<Signup setCurrentUser={setCurrentUser}/>}/>
+            <Route exact path="/profile" element={<ProfilePage setCurrentUser={setCurrentUser}/>}/>
             <Route exact path="/login" element={<Login setCurrentUser={setCurrentUser}/>}/>
             <Route exact path="/" element={<HomePage currentUser={currentUser}/>}/>
           </Routes>
