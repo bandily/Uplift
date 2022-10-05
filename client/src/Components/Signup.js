@@ -40,8 +40,8 @@ function Signup({ setCurrentUser }) {
               eyes: 0,
               hair: 0,
               skinColor: 0,
-              hairColor: 0,
-              accesory: 0,
+              hairColor:0,
+              accessory:0,
               image:
                 "https://avatars.dicebear.com/api/big-smile/:seed.svg?mouth[]=openedSmile&eyes[]=cheery&hair[]=shortHair&accessories[]=catEars&skinColor[]=variant01&hairColor[]=variant01",
               user_id: user.id,
