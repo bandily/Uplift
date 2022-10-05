@@ -8,9 +8,15 @@ import ProfilePage from "./Components/Profile/ProfilePage";
 import NavBar from "./Components/NavBars/NavBar";
 import HomeNav from "./Components/NavBars/HomeNav";
 import ProfileNav from "./Components/NavBars/ProfileNav";
+import NewLog from "./Components/Profile/NewLog";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [logs, setLogs] = useState([])
+
+  function addNewLog(new_log) {
+    setLogs((log) => [new_log, ...log])
+  }
 
   useEffect(() => {
     fetch("/me", {
@@ -41,7 +47,8 @@ function App() {
 
             </Route>
             <Route element={<ProfileNav />}>
-              <Route exact path="/profile" element={<ProfilePage setCurrentUser={setCurrentUser}/>}/>
+              <Route exact path="/profile" element={<ProfilePage logs={logs} setLogs={setLogs} setCurrentUser={setCurrentUser}/>}/>
+              <Route exact path="/new-log" element={<NewLog addNewLog={addNewLog} currentUser={currentUser} setCurrentUser={setCurrentUser}/>}/>
             </Route>
           </Routes>
           {/* <Routes>

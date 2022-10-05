@@ -1,0 +1,118 @@
+.card {
+  
+    border-radius: 16px;
+    z-index: 0;
+    margin-left: 48px;
+    width: 50%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    min-height: 60px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: rgb(65, 65, 65);
+    background-size: cover;
+  }
+  
+  .info {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    transform: translateY(100%)
+      translateY(-30px)
+      translateZ(0);
+    transition: transform 0.4s ease-out;
+  }
+  
+  .info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%)
+      translateY(15px)
+      translateZ(0);
+    transition: transform 0.4s ease-out;
+  }
+  
+  .card:hover .info,
+  .card:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+  
+  
+  .title {
+    margin: 0;
+    padding: 5px 20px;
+    font-size: 18px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Assistant";
+  }
+  
+  .log-details{
+    color:black;
+    display: flex; 
+    justify-content:left;
+    margin-top: 0px;
+    width: fit-content;
+  }
+  
+  .log-details p{
+    margin-right: 10px;
+  }
+  
+  .extra-details{
+    float: left;
+    display: inherit;
+    position:absolute;
+    width: fit-content;
+    top: 15px;
+    left: 20px;
+  
+  }
+  
+  .extra-details p {
+    cursor: pointer;
+  }
+  .log-more-details{
+    float: left;
+    display: inherit;
+    position: relative;
+    width: fit-content;
+    top: -14px;
+  }
+  
+  .log-more-details p{
+    margin-right: 25px;
+    font-size: 17px;
+  }
+  
+  .extra-details p{
+    margin-right: 25px;
+  }
+  
+  .see-details{
+    border: 1.5px solid black;
+    border-radius: 12px;
+    margin: 17px auto 0 auto;
+    padding-left: 10px;
+    padding-right: -15px;
+    font-size: 14px;
+    height: 20px;
+    width: 70px;
+  }
+  
+  .extra-details p:active{
+    position: relative;
+    top: 1px;
+    left: 0.25px;
+  }
