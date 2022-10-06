@@ -21,24 +21,6 @@ function ProfilePage({ currentUser }) {
               />
             </div>
           ) : null}
-
-          <button
-            className="edit-avatar-button"
-            alt="avatar-edit"
-            onMouseOver={() => setShowEdit(true)}
-            onMouseLeave={() => setShowEdit(false)}
-            onClick={() => history("/avatar")}
-          >
-            {showEdit ? (
-              <span
-                style={{ fontSize: "15px", position: "relative", top: "-3px" }}
-              >
-                edit
-              </span>
-            ) : (
-              <span>✎</span>
-            )}
-          </button>
           <h1 className="profile-username">{currentUser.username}</h1>
           <Details currentUser={currentUser} logs={currentUser.logs} />
           <LogsContainer currentUser={currentUser} logs={currentUser.logs} />
