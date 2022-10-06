@@ -109,7 +109,7 @@ function LogsContainer({logs, currentUser, user, deleteLog, id}) {
         <div>
             {currentUser && (<>
             <div className="log-controller">
-            <h2>Your Logs ({logs.length})</h2>
+            <h2>Activity Logs ({logs.length})</h2>
             <select className="select-filter" onChange={(e)=>setAttribute(e.target.value)} name="sort" id="sort">
                     <option selected={true} disabled="disabled">Sort by...</option>    
                     <option value="date">Date</option>
