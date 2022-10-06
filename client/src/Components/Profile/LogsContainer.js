@@ -77,6 +77,13 @@ function LogsContainer({logs, currentUser, user, deleteLog, id}) {
         setDisplayLogs(0)
         setPage(1)
     }
+    
+    function handleRight(){
+        if (displayLogs + 4 < logs.length){
+            setDisplayLogs(displayLogs + 4)
+            setPage(page + 1)
+        } 
+    }
 
     function handleLeft(){
         if (displayLogs - 4 >= 0){
@@ -85,18 +92,15 @@ function LogsContainer({logs, currentUser, user, deleteLog, id}) {
         }
     }
 
-    function handleRight(){
-        if (displayLogs + 4 < logs.length){
-            setDisplayLogs(displayLogs + 4)
-            setPage(page + 1)
-        } 
-    }
-
     function end(){
         if (logs.length % 4 === 0){
             setDisplayLogs(logs.length - 4)
+            //ex 12 logs
+            //setDisplaylogs(8)
         } else {
             setDisplayLogs(Math.floor(logs.length / 4) * 4)
+            //ex 9 logs
+            //setDisplayLogs(8)
         }
         setPage(Math.ceil(logs.length / 4))
     }  
