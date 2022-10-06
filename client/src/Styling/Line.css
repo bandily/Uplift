@@ -1,5 +1,6 @@
 .line-graph{
     padding: 5px 0;
+    color: white;
 }
 
 .color-box{
@@ -8,16 +9,16 @@
     width: 40px;
     border-radius: 5px;
     position: relative;
-    top: 40px;
-    left: 80px;
+    top: 38px;
+    left: 360px;
     margin-top: -10px;
 }
 
 .graph-label {
     position: relative;
-    left: 135px;
     top: 0px;
     letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .detail-buttons{
@@ -42,6 +43,7 @@
 .button-container{
     position: relative;
     margin: 0 10px 0 10px;
+    text-align: center;
 }
 
 .enlarge {

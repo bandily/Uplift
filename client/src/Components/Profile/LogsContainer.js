@@ -8,7 +8,7 @@ import oneLeft from '../../Images/1.png'
 import twoLeft from '../../Images/2.png'
 import '../../Styling/LogContainer.css'
 
-function LogsContainer({logs, currentUser}) {
+function LogsContainer({logs, currentUser, user, deleteLog, id}) {
 
     const [attribute, setAttribute] = useState("date");
     const [displayDetail, setDisplayDetail] = useState(null)
@@ -58,6 +58,11 @@ function LogsContainer({logs, currentUser}) {
         }
     }
 
+    function handleDelete(log) {
+        console.log('deleted')
+        console.log(log)
+  }
+
     let newList = [...logs].sort((a,b) => {
         if (attribute === 'duration'){
                 return b.activity_duration - a.activity_duration
@@ -66,7 +71,7 @@ function LogsContainer({logs, currentUser}) {
         } else {
                 return a.activity_type.localeCompare(b.activity_type) 
         }
-    }).map((log) => <LogCard handleImage={handleImage} setDisplayDetail={setDisplayDetail} key={log.id} log={log}/>)
+    }).map((log) => <LogCard handleImage={handleImage} handleDelete={handleDelete} setDisplayDetail={setDisplayDetail} key={log.id} log={log}/>)
 
     function start(){
         setDisplayLogs(0)

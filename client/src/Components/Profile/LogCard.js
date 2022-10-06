@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
 import "../../Styling/LogCard.css"
 
-function LogCard({log, handleImage}) {
+function LogCard({log, handleImage, handleDelete}) {
 
-    const [liked, setLiked] = useState(false)
-    const [message, setMessage] = useState(false)
     return (
        <div className="log-container">
            <div className='card'>
@@ -17,6 +15,7 @@ function LogCard({log, handleImage}) {
                         </span>
                         <div className="extra-details">
                             <p onClick={()=>handleImage(log)} className="see-details">See More...</p>
+                            <p onClick={() => handleDelete(log)} className="delete-log">delete</p>
                         </div>
                     </span>
                 </div>

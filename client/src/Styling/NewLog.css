@@ -3,11 +3,11 @@
 .signup-entry-happy3,
 .signup-entry-happy4,
 .signup-entry-happy5{
-	background: #454857;
+	background: #ffffff;
 	padding: 4px;
 	border-radius: 3px;
-	box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
-		0 0 0 3px rgba(185, 185, 185, 0.3);
+	box-shadow: inset 0 0 0 3px rgb(255, 255, 255),
+		0 0 0 3px rgb(255, 255, 255);
 	position: relative;
 }
 
@@ -24,7 +24,7 @@
 	cursor: pointer;
 	border-radius: 2px;
 	padding: 4px 5px;
-	background: #454857;
+	background: #ffffff;
 	color: #bdbdbdbd;
 	font-size: 15px;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -35,37 +35,32 @@
 
 .signup-entry-happy5:checked {
 	color: rgb(255, 255, 255);
-	box-shadow: 0 1px 1px #0000002e;
+	box-shadow: 0 5px 5px #0000002e;
 	text-shadow: 0 1px 0px #4938407a;
-  background-color: rgba(9, 255, 0, 0.884);
   color:rgb(255, 255, 255);
 }
 .signup-entry-happy4:checked {
 	color: rgb(255, 255, 255);
-	box-shadow: 0 1px 1px #0000002e;
+	box-shadow: 0 5px 5px #0000002e;
 	text-shadow: 0 1px 0px #4938407a;
-  background-color: rgba(157, 255, 0, 0.884);
   color:rgb(255, 255, 255);
 }
 .signup-entry-happy3:checked {
 	color: rgb(255, 255, 255);
-	box-shadow: 0 1px 1px #0000002e;
+	box-shadow: 0 5px 5px #0000002e;
 	text-shadow: 0 1px 0px #4938407a;
-  background-color: rgba(255, 255, 0, 0.884);
   color:rgb(255, 255, 255);
 }
 .signup-entry-happy2:checked {
 	color: rgb(255, 255, 255);
-	box-shadow: 0 1px 1px #0000002e;
+	box-shadow: 0 5px 5px #0000002e;
 	text-shadow: 0 1px 0px #4938407a;
-  background-color: rgba(255, 123, 0, 0.884);
   color:rgb(255, 255, 255);
 }
 .signup-entry-happy1:checked {
 	color: rgb(255, 255, 255);
-	box-shadow: 0 1px 1px #0000002e;
+	box-shadow: 0 5px 5px #0000002e;
 	text-shadow: 0 1px 0px #4938407a;
-  background-color: rgba(255, 51, 0, 0.884);
   color:rgb(255, 255, 255);
 }
 

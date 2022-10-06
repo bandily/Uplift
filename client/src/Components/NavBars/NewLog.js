@@ -50,6 +50,7 @@ function NewLog({addNewLog, currentUser}){
       }
       })
   };
+
   const errorList= error.map(error_message => <p className="error-message">{error_message}</p>)
 
   function handleDate(date){
