@@ -107,6 +107,10 @@
   width: fit-content;
 }
 
+.calendar-show:hover {
+    cursor: pointer;
+}
+
 .date{
   position: relative;
   top: -60px;
