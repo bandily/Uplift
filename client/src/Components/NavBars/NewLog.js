@@ -10,7 +10,7 @@ function NewLog({addNewLog, currentUser}){
   const [duration, setDuration] = useState(null)
   const [date, setDate] = useState('')
   const [dateEntry, setDateEntry] = useState('')
-  const [happiness, setHappiness] = useState(null)
+  const [feeling, setFeeling] = useState(null)
   const [weight, setWeight] = useState(null)
   const [error, setError] = useState([])
 
@@ -20,7 +20,7 @@ function NewLog({addNewLog, currentUser}){
     activity_duration: duration,
     date: dateEntry,
     weight,
-    happiness,
+    feeling,
     notes,
     likes: 0
   };
@@ -137,14 +137,14 @@ function NewLog({addNewLog, currentUser}){
             value={date}
           /> <p className="exit-calendar" onClick={()=>setShowCalendar(false)}>✖️</p> </> : <p className="calendar-show" onClick={()=>setShowCalendar(true)}>📅</p>}
 
-        <p style={{marginTop:"-50px"}}> Happiness
+        <p style={{marginTop:"-50px"}}> Feeling
           <input
             type="radio"
             label="😣"
             className="signup-entry-happy1"
             name="gender"
             value="1"
-            onChange={(e) => setHappiness(e.target.value)}
+            onChange={(e) => setFeeling(e.target.value)}
           />
           <input
             type="radio"
@@ -152,7 +152,7 @@ function NewLog({addNewLog, currentUser}){
             className="signup-entry-happy2"
             name="gender"
             value= "2"
-            onChange={(e) => setHappiness(e.target.value)}
+            onChange={(e) => setFeeling(e.target.value)}
           />
           <input
             type="radio"
@@ -160,7 +160,7 @@ function NewLog({addNewLog, currentUser}){
             className="signup-entry-happy3"
             name="gender"
             value= "3"
-            onChange={(e) => setHappiness(e.target.value)}
+            onChange={(e) => setFeeling(e.target.value)}
           />
           <input
             type="radio"
@@ -168,7 +168,7 @@ function NewLog({addNewLog, currentUser}){
             className="signup-entry-happy4"
             name="gender"
             value="4"
-            onChange={(e) => setHappiness(e.target.value)}
+            onChange={(e) => setFeeling(e.target.value)}
           />
           <input
             type="radio"
@@ -176,7 +176,7 @@ function NewLog({addNewLog, currentUser}){
             className="signup-entry-happy5"
             name="gender"
             value="5"
-            onChange={(e) => setHappiness(e.target.value)}
+            onChange={(e) => setFeeling(e.target.value)}
           />
         </p>
 

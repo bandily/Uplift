@@ -6,7 +6,7 @@ import "./Styling/App.css";
 import Signup from "./Components/Signup";
 import ProfilePage from "./Components/Profile/ProfilePage";
 import NavBar from "./Components/NavBars/NavBar";
-import NewLog from "./Components/Profile/NewLog";
+import NewLog from "./Components/NavBars/NewLog";
 import Avatar from "./Components/Avatar/Avatar.js";
 
 function App() {
