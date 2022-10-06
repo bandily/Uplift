@@ -11,12 +11,12 @@ function LineChart({logs}) {
         return new Date(a.date) - new Date(b.date)})
 
     const date = sortedByDate.map(log=>log.date)
-    const happiness = sortedByDate.map(log=>log.happiness)
+    const feeling = sortedByDate.map(log=>log.feeling)
     const weight = sortedByDate.map(log=>log.weight)
     const duration = sortedByDate.map(log=>log.activity_duration)
 
-    const [selectedLabel, setSelectedLabel] = useState('Happiness')
-    const [selectedData, setSelectedData] = useState(happiness)
+    const [selectedLabel, setSelectedLabel] = useState('Feeling')
+    const [selectedData, setSelectedData] = useState(feeling)
     const [showChart, setShowChart] = useState(true)
 
     const data = {
@@ -39,7 +39,7 @@ function LineChart({logs}) {
     return (
        <div>
             <div className="button-container">
-                    <button className="detail-buttons" onClick={()=>{setSelectedLabel("Happiness"); setSelectedData(()=> happiness)}}>Happiness</button>
+                    <button className="detail-buttons" onClick={()=>{setSelectedLabel("Feeling"); setSelectedData(()=> feeling)}}>Feeling</button>
                     <button className="detail-buttons" onClick={()=>{setSelectedLabel("Duration"); setSelectedData(()=> duration)}}>Duration</button>
                     <button className="detail-buttons" onClick={()=>{setSelectedLabel("Weight"); setSelectedData(()=> weight)}}>Weight</button>
             </div>

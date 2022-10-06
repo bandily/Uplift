@@ -62,7 +62,7 @@ function LogsContainer({logs, currentUser}) {
         if (attribute === 'duration'){
                 return b.activity_duration - a.activity_duration
         } else if(attribute === 'date'){
-                return new Date(a.date) - new Date(b.date)
+                return new Date(b.date) - new Date(a.date)
         } else {
                 return a.activity_type.localeCompare(b.activity_type) 
         }
@@ -126,7 +126,7 @@ function LogsContainer({logs, currentUser}) {
                         <p className="date-details">{displayDetail.date} | {displayDetail.activity_duration} min | Goal: {goalWeight}lbs</p>
                         <div>
                             <p className="happiness-level">{happinessLevel}</p>
-                            <p className="happiness-details">Happiness: <br/><strong className='weightDetails'>{displayDetail.happiness}/5</strong></p>
+                            <p className="happiness-details">Feeling: <br/><strong className='weightDetails'>{displayDetail.happiness}/5</strong></p>
                         </div>
                         <div>
                             <img className="weight-arrows" src={weightImage} alt={weightImage}/>

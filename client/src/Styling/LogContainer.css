@@ -1,6 +1,9 @@
 .log-controller{
     background-color: rgb(110, 147, 153);
-    box-shadow: 10px 5px 5px rgb(96, 145, 152);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 10px 5px 5px rgb(96, 145, 152); */
     width: 50%;
     padding: 0.3px 15px 30px 15px;
     position: relative;
@@ -45,8 +48,11 @@
     color:white;
     left: 125px;
     padding: 10px;
-    background-color: rgb(44, 44, 44);
-    box-shadow: 10px 5px 5px rgb(39, 39, 39);
+    background-color: rgb(110, 147, 153);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 10px 5px 5px rgb(39, 39, 39); */
     padding: 1px 15px;
     border-radius: 20px;
 
@@ -70,7 +76,10 @@
 .activity-details{
     position:absolute;
     background-color: rgb(110, 147, 153);
-    box-shadow: 5px 5px 5px rgb(39, 39, 39, 0.5);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 10px 5px 5px rgb(96, 145, 152); */
     top: -365px;
     left: 240px;
     height: 345px;
@@ -124,7 +133,7 @@
 
 .notes-details{
     position: relative;
-    top: 36px;
+    top: 30px;
     left: 17px;
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.13);
@@ -135,7 +144,7 @@
 }
 
 .no-activity-selected{
-    color: grey;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     position: relative;
     margin: 0 auto;
@@ -147,7 +156,7 @@
     position: relative;
     margin: 0 auto;
     top: 100px;
-    left: 67px;
+    left: 110px;
     width: fit-content;
     height: 130px;
 }
