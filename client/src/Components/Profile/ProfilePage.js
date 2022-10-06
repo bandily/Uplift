@@ -33,7 +33,7 @@ function ProfilePage({ currentUser }) {
               <span
                 style={{ fontSize: "15px", position: "relative", top: "-3px" }}
               >
-                Edit
+                edit
               </span>
             ) : (
               <span>✎</span>

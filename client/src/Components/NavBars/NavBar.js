@@ -50,7 +50,7 @@ function NavBar({setCurrentUser, currentUser}) {
                     to="/new-log"
                     exact
                     style={linkStyles}
-                    > Add log
+                    > New Log
                 </NavLink>
                 <NavLink
                     className="login-button"
@@ -63,7 +63,7 @@ function NavBar({setCurrentUser, currentUser}) {
             </div>
             ) : null}
 
-            {currentUser !== null ? (
+            {currentUser === null ? (
                 <div className="buttons">
                     <NavLink
                         className="login-button"

@@ -11,7 +11,7 @@
       0px 5px 8px 0px rgba(0, 0, 0, 0.14),
       0px 1px 14px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(110, 147, 153);
     background-size: cover;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .log-details{
-    color:black;
+    color:rgb(110, 147, 153);
     display: flex; 
     justify-content:left;
     margin-top: 0px;

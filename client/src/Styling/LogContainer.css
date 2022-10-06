@@ -1,6 +1,6 @@
 .log-controller{
-    background-color: rgb(44, 44, 44);
-    box-shadow: 10px 5px 5px rgb(39, 39, 39);
+    background-color: rgb(110, 147, 153);
+    box-shadow: 10px 5px 5px rgb(96, 145, 152);
     width: 50%;
     padding: 0.3px 15px 30px 15px;
     position: relative;
@@ -69,8 +69,8 @@
 
 .activity-details{
     position:absolute;
-    background-color: rgb(36, 36, 36);
-    box-shadow: 10px 5px 5px rgb(39, 39, 39, 0.5);
+    background-color: rgb(110, 147, 153);
+    box-shadow: 5px 5px 5px rgb(39, 39, 39, 0.5);
     top: -365px;
     left: 240px;
     height: 345px;
@@ -96,7 +96,7 @@
     font-size: 13px;
     margin: 0 auto;
     padding-top: 3px;
-    color: grey;
+    color: rgb(255, 255, 255);
 }
 
 .happiness-details{

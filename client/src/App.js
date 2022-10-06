@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Outlet } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import Login from "./Components/Login";
 import "./Styling/App.css";
@@ -36,6 +36,7 @@ function App() {
       <div className="bg bg3"></div>
       <Router>
         <Fragment>
+          <Outlet />
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser} />
           <Routes>
             <Route exact path="/signup" element={<Signup setCurrentUser={setCurrentUser}/>}/>

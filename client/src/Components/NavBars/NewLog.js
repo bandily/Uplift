@@ -22,7 +22,7 @@ function NewLog({addNewLog, currentUser}){
     weight,
     feeling,
     notes,
-    likes: 0
+    likes: 0,
   };
 
   const configObj = {
