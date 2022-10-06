@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "../../Styling/LogCard.css"
 
 function LogCard({log, handleImage, handleDelete}) {
