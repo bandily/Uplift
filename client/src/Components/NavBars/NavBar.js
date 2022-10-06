@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import '../../Styling/NavBar.css'
 
-const linkStyles = {
+const navLinkStyles = {
     display: "inline-block",
     width: "fit-content",
     padding: "5px 12px 7px 12px",
@@ -48,21 +48,21 @@ function NavBar({setCurrentUser, currentUser}) {
                     className="login-button"
                     to="/profile"
                     exact
-                    style={linkStyles}
+                    style={navLinkStyles}
                     > Home
                 </NavLink>
                 <NavLink
                     className="login-button"
                     to="/avatar"
                     exact
-                    style={linkStyles}
+                    style={navLinkStyles}
                     > Edit Avatar
                 </NavLink>
                 <NavLink
                     className="login-button"
                     to="/new-log"
                     exact
-                    style={linkStyles}
+                    style={navLinkStyles}
                     > New Log
                 </NavLink>
                 <NavLink
@@ -70,7 +70,7 @@ function NavBar({setCurrentUser, currentUser}) {
                     onClick={logout}
                     to="/"
                     exact
-                    style={linkStyles}
+                    style={navLinkStyles}
                     > Logout
                 </NavLink>
             </div>
@@ -82,7 +82,7 @@ function NavBar({setCurrentUser, currentUser}) {
                         className="login-button"
                         to="/login"
                         exact
-                        style={linkStyles}
+                        style={navLinkStyles}
                         > Login
                     </NavLink>
 
@@ -90,7 +90,7 @@ function NavBar({setCurrentUser, currentUser}) {
                         className="signup-button"
                         to="/signup"
                         exact
-                        style={linkStyles}
+                        style={navLinkStyles}
                         > Sign up
                     </NavLink>
                 </div>) : null}

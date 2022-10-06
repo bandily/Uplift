@@ -1,11 +1,12 @@
 .line-graph{
     padding: 5px 0;
     color: white;
+    margin-bottom: 20px;
 }
 
 .color-box{
     background-color: rgb(75, 192, 192); 
-    height: 10px; 
+    height: 1px; 
     width: 40px;
     border-radius: 5px;
     position: relative;
@@ -44,6 +45,7 @@
     position: relative;
     margin: 0 10px 0 10px;
     text-align: center;
+    top: 550px;
 }
 
 .enlarge {
