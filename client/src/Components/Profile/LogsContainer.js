@@ -68,6 +68,8 @@ function LogsContainer({logs, currentUser, user, deleteLog, id}) {
                 return b.activity_duration - a.activity_duration
         } else if(attribute === 'date'){
                 return new Date(b.date) - new Date(a.date)
+        } else if(attribute === 'oldest'){
+                return new Date(a.date) - new Date(b.date)
         } else {
                 return a.activity_type.localeCompare(b.activity_type) 
         }
@@ -112,7 +114,8 @@ function LogsContainer({logs, currentUser, user, deleteLog, id}) {
             <h2>Activity Logs ({logs.length})</h2>
             <select className="select-filter" onChange={(e)=>setAttribute(e.target.value)} name="sort" id="sort">
                     <option selected={true} disabled="disabled">Sort by...</option>    
-                    <option value="date">Date</option>
+                    <option value="date">Newest</option>
+                    <option value="oldest">Oldest</option>
                     <option value="duration">Duration</option>
                     <option value="activity">Activity</option>
                 </select>
