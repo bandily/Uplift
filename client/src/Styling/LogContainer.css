@@ -32,6 +32,11 @@
     width: fit-content;
     left: 86%;
     font-size: 15px;
+    border-radius: 7px;
+}
+
+.select-filter:hover{
+    cursor: pointer;
 }
 
 .next-page-logs{
