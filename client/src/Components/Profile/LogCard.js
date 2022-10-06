@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
 import "../../Styling/LogCard.css"
 
-function LogCard({log, handleImage}) {
+function LogCard({log, handleImage, handleDelete}) {
 
-    const [liked, setLiked] = useState(false)
-    const [message, setMessage] = useState(false)
     return (
        <div className="log-container">
            <div className='card'>
@@ -16,9 +14,8 @@ function LogCard({log, handleImage}) {
                             <p style={{marginLeft:"-20px"}}>{log.date}</p>
                         </span>
                         <div className="extra-details">
-                            {message ? <p className="respond" onClick={()=>setMessage(false)}>💬</p> : <p onClick={()=>setMessage(true)}>💬</p>}
-                            {liked ? <p onClick={()=>setLiked(false)}>❤️</p> : <p onClick={()=>setLiked(true)}>🤍</p>}
                             <p onClick={()=>handleImage(log)} className="see-details">See More...</p>
+                            <p onClick={() => handleDelete(log)} className="delete-log">delete</p>
                         </div>
                     </span>
                 </div>

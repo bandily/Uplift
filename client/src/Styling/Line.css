@@ -1,5 +1,6 @@
 .line-graph{
     padding: 5px 0;
+    color: white;
 }
 
 .color-box{
@@ -8,16 +9,16 @@
     width: 40px;
     border-radius: 5px;
     position: relative;
-    top: 40px;
-    left: 80px;
+    top: 38px;
+    left: 360px;
     margin-top: -10px;
 }
 
 .graph-label {
     position: relative;
-    left: 135px;
     top: 0px;
     letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .detail-buttons{
@@ -42,6 +43,7 @@
 .button-container{
     position: relative;
     margin: 0 10px 0 10px;
+    text-align: center;
 }
 
 .enlarge {
@@ -89,9 +91,9 @@ body.active-modal {
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: rgb(61, 61, 61);
+    background: rgb(248, 248, 248);
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 20px;
     height: auto;
     width: 60%;
     padding: 95px 55px 55px 55px;
@@ -107,7 +109,7 @@ body.active-modal {
 	border-radius: 5px;
 	border: 1.75px solid white;
 	background-color: transparent;
-	color: white;
+	color: rgb(75, 192, 192);
 	cursor: pointer;
 }
 
@@ -127,6 +129,7 @@ body.active-modal {
     font-size: 150%;
     left: 105px;
     top: 0px;
+    color: rgb(75, 192, 192)
 }
 
 .open-container-details{
