@@ -1,0 +1,15 @@
+.user-details{
+    font-family: "Assistant";
+    width:290px;
+    color:white;
+    display: block;
+    position: relative;
+    left: 125px;
+    background-color: rgb(44, 44, 44);
+    box-shadow: 10px 5px 5px rgb(39, 39, 39);
+    padding: 1px 15px;
+    border-radius: 20px;
+    height: 350px;
+    top: 5px;
+    z-index: 5;
+}
