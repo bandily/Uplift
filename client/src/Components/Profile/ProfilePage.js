@@ -6,7 +6,6 @@ import "../../Styling/ProfilePage.css";
 
 function ProfilePage({ currentUser }) {
   const history = useNavigate();
-  const [showEdit, setShowEdit] = useState(false);
 
   return (
     <div>

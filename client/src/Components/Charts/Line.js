@@ -3,6 +3,7 @@ import { Line } from "react-chartjs-2";
 import enlarge from '../../Images/enlarge.png'
 import '../../Styling/Line.css'
 import { Chart, LineController, LineElement, PointElement, LinearScale,  Title, CategoryScale, Tooltip } from 'chart.js';
+
 Chart.register(LineController, LineElement, PointElement, LinearScale, Tooltip, Title, CategoryScale);
 
 function LineChart({logs}) {
@@ -26,10 +27,10 @@ function LineChart({logs}) {
             data: selectedData,
             fill: false,
             borderColor: 'rgb(75, 192, 192)',
-            tension: 0.1
+            tension: 0.1,
+            backgroundColor: "white",
         }]}
     
-    //Exit enlarged graph when clicking outside modal
     function handleOverlay(){
         if (showChart === false){
             setShowChart(true)
