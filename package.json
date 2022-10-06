@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@dicebear/avatars": "^4.10.5",
+    "@dicebear/avatars-avataaars-sprites": "^4.10.5",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.1"
   }
