@@ -5,7 +5,7 @@ import '../../Styling/NavBar.css'
 const linkStyles = {
     display: "inline-block",
     width: "fit-content",
-    padding: "2px 12px 7px 12px",
+    padding: "5px 12px 7px 12px",
     margin: "6px",
     background: "white",
     textDecoration: "none",
@@ -44,7 +44,14 @@ function NavBar({setCurrentUser, currentUser}) {
                 <div className="greeting">
                 <p className="logged">logged in as <strong>{currentUser.username}</strong></p>
                 </div>
-                    <a href="/profile"><img className="nav-icon" src={currentUser.Avatar !== null ? currentUser?.avatar?.image : null} alt="icon"></img></a>
+                    {/* <a href="/profile"><img className="nav-icon" src={currentUser.Avatar !== null ? currentUser?.avatar?.image : null} alt="icon"></img></a> */}
+                <NavLink
+                    className="login-button"
+                    to="/profile"
+                    exact
+                    style={linkStyles}
+                    > Home
+                </NavLink>
                 <NavLink
                     className="login-button"
                     to="/new-log"
