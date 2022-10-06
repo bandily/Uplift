@@ -32,8 +32,8 @@ function App() {
   return (
     <>
       <div className="bg"></div>
-      <div className="bg bg2"></div>
-      <div className="bg bg3"></div>
+      <div className="bg 2"></div>
+      <div className="bg 3"></div>
       <Router>
         <Fragment>
           <Outlet />
