@@ -6,19 +6,18 @@ import '../../Styling/Avatar.css'
 
 function Avatar({ currentUser }) {
 
-   const [mouth, setMouth] = useState(currentUser.avatar.mouth) //8 mouths
-   const [eyes, setEyes] = useState(currentUser.avatar.eyes) //8 eyes
-   const [hair, setHair] = useState(currentUser.avatar.hair) //13 hair
-   const [accessories, setAccessories] = useState(currentUser.avatar.accessory) //8 accessories
-   const [skinColor, setSkinColor] = useState(currentUser.avatar.skinColor) //8 skin color
-   const [hairColor, setHairColor] = useState(currentUser.avatar.hairColor)//8 hair color
+   const [mouth, setMouth] = useState(currentUser.avatar.mouth)
+   const [eyes, setEyes] = useState(currentUser.avatar.eyes)
+   const [hair, setHair] = useState(currentUser.avatar.hair)
+   const [accessories, setAccessories] = useState(currentUser.avatar.accessory)
+   const [skinColor, setSkinColor] = useState(currentUser.avatar.skinColor)
+   const [hairColor, setHairColor] = useState(currentUser.avatar.hairColor)
    const [image, setImage] = useState(currentUser.avatar.image)
 
    const URL = `https://avatars.dicebear.com/api/big-smile/:seed.svg?mouth[]=${style.schema.properties.mouth.default[mouth]}&eyes[]=${style.schema.properties.eyes.default[eyes]}&hair[]=${style.schema.properties.hair.default[hair]}&accessories[]=${style.schema.properties.accessories.default[accessories]}&skinColor[]=${style.schema.properties.skinColor.default[skinColor]}&hairColor[]=${style.schema.properties.hairColor.default[hairColor]}`;
 
    function handleClick(e){
-      //Updates the new id and mods by 13 or 8 depending on name of attribute
-      let newValue=parseInt(e.target.id);
+    let newValue=parseInt(e.target.id);
       if (e.target.name === "hair"){
          if (e.target.alt === "left"){
             newValue = (parseInt(e.target.id) - 1) % 13
@@ -39,7 +38,6 @@ function Avatar({ currentUser }) {
          }
       }
  
-      //Updates the states of the attribute according to the name
       switch(e.target.name){
          case "hair":
             setHair(newValue)
@@ -64,7 +62,6 @@ function Avatar({ currentUser }) {
       }
    }
 
-   // Live changes to the image
    useEffect(()=>{setImage(URL)},[URL])
 
    const handleSubmit = (event) => {
