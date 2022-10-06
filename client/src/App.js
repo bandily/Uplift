@@ -1,12 +1,12 @@
 import React, { useState, Fragment, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Outlet } from "react-router-dom";
 import HomePage from "./Components/HomePage/HomePage";
 import Login from "./Components/Login";
 import "./Styling/App.css";
 import Signup from "./Components/Signup";
 import ProfilePage from "./Components/Profile/ProfilePage";
 import NavBar from "./Components/NavBars/NavBar";
-import NewLog from "./Components/Profile/NewLog";
+import NewLog from "./Components/NavBars/NewLog";
 import Avatar from "./Components/Avatar/Avatar.js";
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
       <div className="bg bg3"></div>
       <Router>
         <Fragment>
+          <Outlet />
           <NavBar currentUser={currentUser} setCurrentUser={setCurrentUser} />
           <Routes>
             <Route exact path="/signup" element={<Signup setCurrentUser={setCurrentUser}/>}/>

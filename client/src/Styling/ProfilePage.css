@@ -1,0 +1,48 @@
+.avatar{
+    position: static;
+    margin: 110px 0 50px 150px;
+     width: 15%;
+     min-width: 200px;
+     border-radius: 50%;
+     border:5px solid white;
+     box-shadow: 10px 10px 7px rgb(0, 0, 0, 0.5);
+     object-fit:cover;
+}
+
+.details{
+    position: static;
+    margin-left: 250px;
+    color: white;
+}
+
+.edit-avatar-button{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin-left: 390px;
+    top: -120px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+    border: 1px rgb(255, 255, 255) solid;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 25px;
+}
+
+.edit-avatar-button:hover{
+    position: relative;
+    top: -119px;
+    cursor: pointer;
+}
+
+.profile-username{
+    font-size: 80px;
+    font-family: "Assistant";
+    color: white;
+    width: fit-content;
+    position: relative;
+    top: -330px;
+    left: 500px;
+    margin-bottom: -200px;
+}

@@ -22,7 +22,7 @@ function NewLog({addNewLog, currentUser}){
     weight,
     happiness,
     notes,
-    likes: 0
+    likes: 0,
   };
 
   const configObj = {
@@ -64,10 +64,10 @@ function NewLog({addNewLog, currentUser}){
     <div className="authForm">
       <form className="signup-form" onSubmit={handleSubmit}>
         <h1 style={{marginBottom:"30px", marginTop:"50px", fontSize: "40px", fontFamily: "Assistant"}}>ACTIVITY LOG</h1>
-            <p className="please-log">Please enter in the details of your activity</p>
+            <p className="please-log"></p>
 
         <p>
-          <label 
+          <label className='activity-input'
             htmlFor="activity_type"
             style={{marginRight:"5px"}}
           >
@@ -137,10 +137,10 @@ function NewLog({addNewLog, currentUser}){
             value={date}
           /> <p className="exit-calendar" onClick={()=>setShowCalendar(false)}>✖️</p> </> : <p className="calendar-show" onClick={()=>setShowCalendar(true)}>📅</p>}
 
-        <p style={{marginTop:"-50px"}}> Happiness
+        <p style={{marginTop:"-50px"}}> Feeling
           <input
             type="radio"
-            label="😣"
+            label="😡"
             className="signup-entry-happy1"
             name="gender"
             value="1"
@@ -148,7 +148,7 @@ function NewLog({addNewLog, currentUser}){
           />
           <input
             type="radio"
-            label="😟"
+            label="😢"
             className="signup-entry-happy2"
             name="gender"
             value= "2"

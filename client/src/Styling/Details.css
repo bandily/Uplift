@@ -5,8 +5,10 @@
     display: block;
     position: relative;
     left: 125px;
-    background-color: rgb(44, 44, 44);
-    box-shadow: 10px 5px 5px rgb(39, 39, 39);
+    background-color: rgb(110, 147, 153);
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.3),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.2);
     padding: 1px 15px;
     border-radius: 20px;
     height: 350px;

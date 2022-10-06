@@ -7,9 +7,9 @@
     position: fixed;
     z-index: 2;
     margin-top: -5px;
-    background-color: rgb(50, 50, 50);
     font-family: "Assistant";
     text-decoration: none;
+    background: rgb(110, 147, 153)
 }
 
 .buttons{

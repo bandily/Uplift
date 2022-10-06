@@ -27,9 +27,9 @@ function Signup({ setCurrentUser }) {
         gender,
         goal_weight: goalWeight,
       }),
-    }).then((res) => {
+    }).then(res => {
       if (res.ok) {
-        res.json().then((user) => {
+        res.json().then(user => {
           return fetch("/new-avatar", {
             method: "POST",
             headers: {
@@ -40,10 +40,9 @@ function Signup({ setCurrentUser }) {
               eyes: 0,
               hair: 0,
               skinColor: 0,
-              hairColor:0,
-              accessory:0,
-              image:
-                "https://avatars.dicebear.com/api/big-smile/:seed.svg?mouth[]=openedSmile&eyes[]=cheery&hair[]=shortHair&accessories[]=catEars&skinColor[]=variant01&hairColor[]=variant01",
+              hairColor: 0,
+              accessory: 0,
+              image: "https://avatars.dicebear.com/api/big-smile/:seed.svg?mouth[]=openedSmile&eyes[]=cheery&hair[]=shortHair&accessories[]=catEars&skinColor[]=variant01&hairColor[]=variant01",
               user_id: user.id,
             }),
           }).then((res) => {
@@ -199,7 +198,7 @@ function Signup({ setCurrentUser }) {
           Already have an account?
           <button className="no-account">
             <Link to="/login" className="no-account">
-              <strong>Log In</strong>
+              <strong className="signlog">Log In</strong>
             </Link>
           </button>
         </p>

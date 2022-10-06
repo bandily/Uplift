@@ -62,7 +62,7 @@ function Login ({setCurrentUser}) {
                 <div className='error-login'>{error}</div>
                 <p><button className='post-button' type='submit'>LOGIN</button></p>
                 <p style={{marginTop: "150px"}}> Don't have an account?
-                <button className='no-account'><Link to="/signup" className='no-account'><strong>Sign Up!</strong></Link></button></p>
+                <button className='no-account'><Link to="/signup" className='no-account'><strong className='signlog'>Sign Up!</strong></Link></button></p>
                 {/* <img className='login-image' src={login} alt="login"/> */}
             </form>
         </div>

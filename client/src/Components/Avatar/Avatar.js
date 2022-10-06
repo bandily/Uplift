@@ -90,7 +90,7 @@ function Avatar({ currentUser }) {
             })
         })
     }
-    
+
      return (
        <div className="avatar-edit-container">
          <img className="avatar-edit" src={image} alt="avatar"></img>

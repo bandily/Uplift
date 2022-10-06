@@ -5,7 +5,7 @@
 }
 
 .login-form {
-	background-color: rgb(46, 46, 46);
+	background-color: rgb(110, 147, 153) ;
 	color: white;
 	width: 405px;
 	height: fit-content;
@@ -23,7 +23,7 @@
 }
 
 .please-log{
-	color:rgb(153, 153, 153);
+	color:rgb(255, 255, 255);
 	position: relative;
 	top: -20px;
 }
@@ -63,12 +63,27 @@
 .no-account{
 	background-color: transparent;
 	border: transparent;
-	color:rgb(153, 153, 153);
+	color:rgb(255, 255, 255);
 	text-decoration:none;
 }
 
-.no-account:hover{
+.signcolor {
 	color: white;
+}
+
+.signlog {
+display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.signlog:hover {
+	text-decoration: underline;
+}
+
+
+.no-account:hover{
+	color: rgb(0, 0, 0);
 }
 
 .login-image{
