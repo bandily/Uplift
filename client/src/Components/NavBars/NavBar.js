@@ -54,6 +54,13 @@ function NavBar({setCurrentUser, currentUser}) {
                 </NavLink>
                 <NavLink
                     className="login-button"
+                    to="/avatar"
+                    exact
+                    style={linkStyles}
+                    > Edit Avatar
+                </NavLink>
+                <NavLink
+                    className="login-button"
                     to="/new-log"
                     exact
                     style={linkStyles}
